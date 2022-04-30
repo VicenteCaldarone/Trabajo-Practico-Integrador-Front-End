@@ -1,0 +1,62 @@
+.bg-conf{
+    background-color: rgb(53, 58, 64);
+}
+
+.navbar-brand-conf{
+    color: lightgray;
+    text-decoration: none;
+}
+.navbar-brand-conf:hover{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.nav-link-conf{
+    color: darkgray;
+    text-decoration: none;
+}
+.nav-link-conf:hover{
+    color: lightgray;
+    text-decoration: none;
+}
+.nav-link-green-conf{
+    color: rgb(37, 168, 66);
+    text-decoration: none;
+}
+.nav-link-green-conf:hover{
+    color: rgb(92, 216, 120);
+    text-decoration: none;
+}
+
+.active-conf{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.opacity-conf{
+    filter:brightness(0.5);
+}
+
+.carousel-caption{
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 60%;
+}
+.btn-success{
+    background-color: rgb(37, 168, 66);  
+}
+
+.info-conf{
+    background-color: rgb(53, 58, 64);
+    color: #fff;
+}
+
+.btn-enviar{
+    background-color: rgb(150, 201, 62);
+    color: #fff;
+}
+
+.footer-conf{
+    background-color: rgb(28, 65, 84);
+    color: #fff;
+}
