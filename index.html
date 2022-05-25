@@ -232,21 +232,23 @@
           <div class="col-lg-8 col-sm-12">
             <form class="row" action="">
               <div class="col-lg-6 col-sm-12 px-1 mb-3">
-                <input type="text" class="form-control" name="ticketNombre" placeholder="Nombre">
+                <input type="text" class="form-control" name="ticketNombre" id="ticketNombre" placeholder="Nombre">
               </div>
               <div class="col-lg-6 col-sm-12 px-1 mb-3">
-                <input type="text" class="form-control" name="ticketApellido" placeholder="Apellido">
+                <input type="text" class="form-control" name="ticketApellido" id="ticketApellido"placeholder="Apellido">
               </div>
               <div class="col-12 px-1 mb-3">
-                <input type="text" class="form-control" name="ticketCorreo" placeholder="Correo ">
+                <input type="text" class="form-control" name="ticketCorreo" id="ticketCorreo"placeholder="Correo ">
               </div>
               <div class="col-lg-6 col-sm-12 px-1 mb-3">
                 <label for="ticketCantidad" class="form-label">Cantidad</label>
-                <input type="text" class="form-control" name="ticketCantidad" placeholder="cantidad">
+                <input type="number" class="form-control" name="ticketCantidad" id="ticketCantidad"placeholder="cantidad">
               </div>
               <div class="col-lg-6 col-sm-12 px-1 mb-3">
                 <label for="ticketCategoria" class="form-label">Categoría</label>
-                <select class="form-select" name="ticketCategoria">
+                <select class="form-select" name="ticketCategoria"id="ticketCategoria">
+                  <option value="" selected>--Seleccione--</option>
+                  <option value="0">Sin Categoría</option>
                   <option value="1">Estudiante</option>
                   <option value="2">Trainee</option>
                   <option value="3">Junior</option>
@@ -254,14 +256,14 @@
               </div>
               <div class="col-12 px-1 py-3">
                 <div class="alert alert-primary py-2" role="alert">
-                  Total a Pagar: $
+                  Total a Pagar: $ <span id="totalPagar"></span>
                 </div>
               </div>
               <div class="col-lg-6 col-sm-12 px-1">
-                <button type="reset" class="btn btn-enviar w-100">Borrar</button>
+                <button type="button" class="btn btn-enviar w-100" id="ticketBorrar">Borrar</button>
               </div>
               <div class="col-lg-6 col-sm-12 px-1">
-                <button type="submit" class="btn btn-enviar w-100">Resumen</button>
+                <button type="button" class="btn btn-enviar w-100" id="ticketResumen">Resumen</button>
               </div>            
             </form>
           </div>
@@ -284,6 +286,7 @@
     </footer>
     <!-- Bootstrap Bundle with Popper -->
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
