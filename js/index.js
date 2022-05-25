@@ -39,7 +39,7 @@ btnResumen.addEventListener('click', e => {
         correo.focus();
         return;
     }
-    if(isNaN(cantidad.value) ||  cantidad.value == 0){
+    if(isNaN(cantidad.value) ||  cantidad.value <= 0){
         cantidad.classList.add('is-invalid');
         alert('Ingresá una cantidad válida');
         cantidad.focus();
