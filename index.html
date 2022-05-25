@@ -36,7 +36,7 @@
                 <a class="nav-link-conf m-3" href="#orador">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link-green-conf m-3" href="#">Comprar tickets</a>
+                <a class="nav-link-green-conf m-3" href="#compraTickets">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -58,8 +58,8 @@
                 evento, a otros estudiantes de Codo a Codo y los oradores de primer <br>
                 nivel que tenemos para tí. Te esperamos!
               </p>
-              <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-              <button type="button" class="btn btn-success">Comprar tickets</button>
+              <a class="btn btn-outline-light" href="#orador">Quiero ser orador</a>
+              <a class="btn btn-success" href="#compraTickets">Comprar tickets</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -73,8 +73,8 @@
                 evento, a otros estudiantes de Codo a Codo y los oradores de primer <br>
                 nivel que tenemos para tí. Te esperamos!
               </p>
-              <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-              <button type="button" class="btn btn-success">Comprar tickets</button>
+              <a class="btn btn-outline-light" href="#orador">Quiero ser orador</a>
+              <a class="btn btn-success" href="#compraTickets">Comprar tickets</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -88,8 +88,8 @@
                 evento, a otros estudiantes de Codo a Codo y los oradores de primer <br>
                 nivel que tenemos para tí. Te esperamos!
               </p>
-              <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-              <button type="button" class="btn btn-success">Comprar tickets</button>
+              <a class="btn btn-outline-light" href="#orador">Quiero ser orador</a>
+              <a class="btn btn-success" href="#compraTickets">Comprar tickets</a>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
               </div>
               <div class="col-12 mb-3">
                 <textarea class="form-control form-control-lg" name="tema" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
-                <div id="emailHelp" class="form-text">Recuerda incluir un título para tu charla.</div>
+                <div id="emailHelp" class="form-text">Recuerda incluir un títutlo para tu charla.</div>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-enviar w-100">Enviar</button>
@@ -184,6 +184,91 @@
 
       </div>
       <!-- fin formulario -->
+      <!-- inicio formulario Compra Tickets -->
+      <div class="container px-1 pb-5 mt-2" id="compraTickets">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12 px-1">
+                <div class="card border-primary mb-3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Estudiante</h5>
+                    <p class="card-text fs-6">Tiene un descuento</p>
+                    <h6 class="card-title fw-bold">80%</h6>
+                    <small class="text-muted">* presentar documentación</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 px-1">
+                <div class="card border-success mb-3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Trainee</h5>
+                    <p class="card-text fs-6">Tiene un descuento</p>
+                    <h6 class="card-title fw-bold">50%</h6>
+                    <small class="text-muted">* presentar documentación</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 px-1">
+                <div class="card border-warning mb-3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Junior</h5>
+                    <p class="card-text fs-6">Tiene un descuento</p>
+                    <h6 class="card-title fw-bold">15%</h6>
+                    <small class="text-muted">* presentar documentación</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <small>VENTA</small>
+          <h2>VALOR DE TICKET $ 200</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-sm-12">
+            <form class="row" action="">
+              <div class="col-lg-6 col-sm-12 px-1 mb-3">
+                <input type="text" class="form-control" name="ticketNombre" placeholder="Nombre">
+              </div>
+              <div class="col-lg-6 col-sm-12 px-1 mb-3">
+                <input type="text" class="form-control" name="ticketApellido" placeholder="Apellido">
+              </div>
+              <div class="col-12 px-1 mb-3">
+                <input type="text" class="form-control" name="ticketCorreo" placeholder="Correo ">
+              </div>
+              <div class="col-lg-6 col-sm-12 px-1 mb-3">
+                <label for="ticketCantidad" class="form-label">Cantidad</label>
+                <input type="text" class="form-control" name="ticketCantidad" placeholder="cantidad">
+              </div>
+              <div class="col-lg-6 col-sm-12 px-1 mb-3">
+                <label for="ticketCategoria" class="form-label">Categoría</label>
+                <select class="form-select" name="ticketCategoria">
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                </select>
+              </div>
+              <div class="col-12 px-1 py-3">
+                <div class="alert alert-primary py-2" role="alert">
+                  Total a Pagar: $
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 px-1">
+                <button type="reset" class="btn btn-enviar w-100">Borrar</button>
+              </div>
+              <div class="col-lg-6 col-sm-12 px-1">
+                <button type="submit" class="btn btn-enviar w-100">Resumen</button>
+              </div>            
+            </form>
+          </div>
+        </div>
+        
+      </div>
+      <!-- fin formulario Compra Tickets-->
     </div>
     
     <footer class="footer-conf py-2">
